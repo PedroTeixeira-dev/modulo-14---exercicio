@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #eb5c25;
+}
+
+.nav .nav-link.active {
+    background-color: #fbd6c5;
+    color: #eb5c25;
+}
+
+.nav .nav-link,
+.navbar-brand ,
+.navbar-brand:hover {
+    color: #fbd6c5;
+}
+
+.navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    
+}
+
+.navbar-toggler {
+    background-color: #fbd6c5;
+}
