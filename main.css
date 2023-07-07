@@ -1,3 +1,7 @@
+header {
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -25,3 +29,28 @@ body {
 .navbar-toggler {
     background-color: #fbd6c5;
 }
+
+.h1s {
+    color: #eb5c25;
+    font-family:  'Bebas Neue', sans-serif;
+}
+
+.ps {
+    color: #eb5c25;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imgCapa {
+    
+    width: 40vw;
+    border-radius: 20%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.inicio {
+    align-items: center;
+}
+
+
+

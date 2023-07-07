@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Wheels</title>
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-md sticky-top p-3">
+    <header class="navbar navbar-expand-md sticky-top p-3 mb-3">
         <div class="container">
             <h1 class="navbar-brand m-0 fs-1">
                 Tech Wheels
@@ -23,12 +26,12 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link active">
+                        <a href="sobreNos" class="nav-link active">
                             <i class="bi bi-ev-front-fill me-1"></i>
                             Sobre nós</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="nossosCarros" class="nav-link">
                             <i class="bi bi-car-front-fill"></i>
                             <i class="bi bi-car-front me-1"></i>
                             Nossos Carros</a>
@@ -40,10 +43,59 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
     </header>
-    
+    <section  id="sobreNos">
+        <div class="container">
+            <div class="row inicio">
+                <div class="col-md-6 col-sm-12 text-center ">
+                    <h1 class="h1s">
+                        Tech wheels
+                    </h1>
+                    <p class=" ps">
+                        Somos uma empresa de mobilidade urbana apaixonada por tecnologia e inovação.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                    <img class="imgCapa" src="img/cliente-feliz-e-satisfeito-acaba-de-comprar-um-carro-novo-em-uma-concessionaria.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 text-center">
+                <h2 class="h1s">
+                    Conheça nossas vantagens
+                </h>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="owl-carousel owl-theme">
+                <div class="item ">
+                    <img src="img/carousel/img1.PNG" alt="">
+                </div>
+                <div class="item ">
+                    <img src="img/carousel/img2.PNG" alt="">
+                </div>
+                <div class="item ">
+                    <img src="img/carousel/img3.PNG" alt="">
+                </div>
+                <div class="item ">
+                    <img src="img/carousel/img4.PNG" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-5" id="nossosCarros">
+        <div class="container">
+            <div class="row">
+                <h2 class="h1s text-center">
+                    Nossos Carros
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="lib/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="main.js"></script>
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
 </body>
