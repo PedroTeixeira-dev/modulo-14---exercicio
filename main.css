@@ -10,12 +10,12 @@ body {
     background-color: #eb5c25;
 }
 
-.nav .nav-link.active {
+#cabecalho .nav .nav-link.active {
     background-color: #fbd6c5;
     color: #eb5c25;
 }
 
-.nav .nav-link,
+#cabecalho .nav .nav-link,
 .navbar-brand ,
 .navbar-brand:hover {
     color: #fbd6c5;
@@ -52,5 +52,19 @@ body {
     align-items: center;
 }
 
+.nav-carros .nav-link.active,
+.nav-carros .nav-link.active:hover {
+    background-color: #eb5c25;
+    color: #fbd6c5;
+}
+
+.nav-carros .nav-link:hover {
+color: #eb5c25;
+}
+
+.card,
+.card img {
+    border-radius: 10%;
+}
 
 
