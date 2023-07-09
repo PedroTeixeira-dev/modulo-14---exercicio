@@ -26,18 +26,18 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="sobreNos" class="nav-link active">
+                        <a href="#sobreNos" class="nav-link active">
                             <i class="bi bi-ev-front-fill me-1"></i>
                             Sobre nós</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="nossosCarros" class="nav-link">
+                        <a href="#nossosCarros" class="nav-link">
                             <i class="bi bi-car-front-fill"></i>
                             <i class="bi bi-car-front me-1"></i>
                             Nossos Carros</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#contato" class="nav-link">
                             <i class="bi bi-chat-right-dots-fill me-1"></i>
                             Entre em contato</a>
                     </li>
@@ -45,82 +45,305 @@
             </nav>
         </div>
     </header>
-    <section  id="sobreNos mb-3">
-        <div class="container">
-            <div class="row inicio">
-                <div class="col-md-6 col-sm-12 text-center ">
-                    <h1 class="h1s">
-                        Tech wheels
-                    </h1>
-                    <p class=" ps">
-                        Somos uma empresa de mobilidade urbana apaixonada por tecnologia e inovação.
-                    </p>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <section  id="sobreNos" class="mb-3">
+            <div class="container">
+                <div class="row inicio">
+                    <div class="col-md-6 col-sm-12 text-center ">
+                        <h1 class="h1s">
+                            Tech wheels
+                        </h1>
+                        <p class=" ps">
+                            Somos uma empresa de mobilidade urbana apaixonada por tecnologia e inovação.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+                        <img class="imgCapa" src="img/cliente-feliz-e-satisfeito-acaba-de-comprar-um-carro-novo-em-uma-concessionaria.jpg" alt="">
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-12 d-flex justify-content-center">
-                    <img class="imgCapa" src="img/cliente-feliz-e-satisfeito-acaba-de-comprar-um-carro-novo-em-uma-concessionaria.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-12 text-center">
-                <h2 class="h1s">
-                    Conheça nossas vantagens
-                </h>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="owl-carousel owl-theme">
-                <div class="item imgCarousel">
-                    <img src="img/carousel/img1.PNG" alt="">
-                </div>
-                <div class="item imgCarousel">
-                    <img src="img/carousel/img2.PNG" alt="">
-                </div>
-                <div class="item imgCarousel">
-                    <img src="img/carousel/img3.PNG" alt="">
-                </div>
-                <div class="item imgCarousel">
-                    <img src="img/carousel/img4.PNG" alt="">
+                <div class="col-12 text-center">
+                    <h2 class="h1s">
+                        Conheça nossas vantagens
+                    </h>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="mt-5" id="nossosCarros">
-        <div class="container">
-            <div class="row">
-                <h2 class="h1s text-center">
-                    Nossos Carros
-                </h2>
+    
+            <div class="row mt-4">
+                <div class="owl-carousel owl-theme">
+                    <div class="item imgCarousel">
+                        <img src="img/carousel/img1.PNG" alt="">
+                    </div>
+                    <div class="item imgCarousel">
+                        <img src="img/carousel/img2.PNG" alt="">
+                    </div>
+                    <div class="item imgCarousel">
+                        <img src="img/carousel/img3.PNG" alt="">
+                    </div>
+                    <div class="item imgCarousel">
+                        <img src="img/carousel/img4.PNG" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <aside class="col-md-2">
-                    <nav class="nav nav-pills flex-column nav-carros">
-                        <button type="button" class="nav-link fw-bold text-start ps active">Todos os carros</button>
-                        <button type="button" class="nav-link fw-bold text-start ps">Carros da Fiat</button>
-                        <button type="button" class="nav-link fw-bold text-start ps">Carros da Chevrolet</button>
-                        <button type="button" class="nav-link fw-bold text-start ps">Carros da Volkswagen</button>
-                    </nav>>
-                </aside>
-                <div class="col-md-10">
-                    <div class="tab-content">
-                        <div class="tab-pane active">
-                            <div class="row">
-                                <div class="col-md-3">
+        </section>
+        <section class="mt-5 mb-5" id="nossosCarros">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h1s text-center mb-3">
+                        Nossos Carros
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-carros">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#todos" class="nav-link fw-bold text-start ps active">Todos os carros</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fiat" class="nav-link fw-bold text-start ps">Carros da Fiat</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#chevrolet" class="nav-link fw-bold text-start ps">Carros da Chevrolet</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#volkswagen" class="nav-link fw-bold text-start ps">Carros da Volkswagen</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="todos">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <img src="img/carros/argo.jpeg" alt="Carro argo">
+                                            <div class="card-body">
+                                                <h5>Fiat Argo 2020</h5>
+                                                <p>Fiat Argo 2020, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <img src="img/carros/gol.jpg" alt="Carro gol">
+                                            <div class="card-body">
+                                                <h5>Volkswagen Gol 2020</h5>
+                                                <p>Volkswagen gol 2020, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="card">
+                                            <img src="img/carros/onix.jpg" alt="Carro onix">
+                                            <div class="card-body">
+                                                <h5>Chevrolet Onix 2015</h5>
+                                                <p>Chevrolet onix 2015, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="fiat">
+                                <div class="row">
+                                <div class="col-md-4 col-sm-12">
                                     <div class="card">
                                         <img src="img/carros/argo.jpeg" alt="Carro argo">
                                         <div class="card-body">
                                             <h5>Fiat Argo 2020</h5>
                                             <p>Fiat Argo 2020, otimo estado e super economico. Ideal para suas corridas.</p>
-                                            <a href="#" class="btn btn-success">Alugue ja!</a>
+                                            <a href="#" class="btn btn-success text-center">Alugue ja!</a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="card">
+                                        <img src="img/carros/argo.jpeg" alt="Carro argo">
+                                        <div class="card-body">
+                                            <h5>Fiat Argo 2020</h5>
+                                            <p>Fiat Argo 2020, otimo estado e super economico. Ideal para suas corridas.</p>
+                                            <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="card">
+                                        <img src="img/carros/argo.jpeg" alt="Carro argo">
+                                        <div class="card-body">
+                                            <h5>Fiat Argo 2020</h5>
+                                            <p>Fiat Argo 2020, otimo estado e super economico. Ideal para suas corridas.</p>
+                                            <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <div class="card">
+                                        <img src="img/carros/argo.jpeg" alt="Carro argo">
+                                        <div class="card-body">
+                                            <h5>Fiat Argo 2020</h5>
+                                            <p>Fiat Argo 2020, otimo estado e super economico. Ideal para suas corridas.</p>
+                                            <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div>    
+                                <div class="tab-pane" id="chevrolet">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <img src="img/carros/onix.jpg" alt="Carro onix">
+                                                <div class="card-body">
+                                                    <h5>Chevrolet onix 2015</h5>
+                                                    <p>Chevrolet onix, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                    <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <img src="img/carros/onix.jpg" alt="Carro onix">
+                                                <div class="card-body">
+                                                    <h5>Chevrolet onix 2015</h5>
+                                                    <p>Chevrolet onix, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                    <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <img src="img/carros/onix.jpg" alt="Carro onix">
+                                                <div class="card-body">
+                                                    <h5>Chevrolet onix 2015</h5>
+                                                    <p>Chevrolet onix, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                    <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="card">
+                                                <img src="img/carros/onix.jpg" alt="Carro onix">
+                                                <div class="card-body">
+                                                    <h5>Chevrolet onix 2015</h5>
+                                                    <p>Chevrolet onix, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                    <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                    </div>
+                                    <div class="tab-pane" id="volkswagen">
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="card">
+                                                    <img src="img/carros/gol.jpg" alt="Carro gol">
+                                                    <div class="card-body">
+                                                        <h5>Volkswagen gol 2020</h5>
+                                                        <p>Gol, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                        <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="card">
+                                                    <img src="img/carros/gol.jpg" alt="Carro gol">
+                                                    <div class="card-body">
+                                                        <h5>Volkswagen gol 2020</h5>
+                                                        <p>Gol, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                        <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="card">
+                                                    <img src="img/carros/gol.jpg" alt="Carro gol">
+                                                    <div class="card-body">
+                                                        <h5>Volkswagen gol 2020</h5>
+                                                        <p>Gol, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                        <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="card">
+                                                    <img src="img/carros/gol.jpg" alt="Carro gol">
+                                                    <div class="card-body">
+                                                        <h5>Volkswagen gol 2020</h5>
+                                                        <p>Gol, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                        <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="card">
+                                                    <img src="img/carros/gol.jpg" alt="Carro gol">
+                                                    <div class="card-body">
+                                                        <h5>Volkswagen gol 2020</h5>
+                                                        <p>Gol, otimo estado e super economico. Ideal para suas corridas.</p>
+                                                        <a href="#" class="btn btn-success text-center">Alugue ja!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
                         </div>
-                    </div>>
+                    </div>
+                </div>
+            
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h1s text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div class="mb-2">
+                                <label for="nome" class="form-label  fw-bold h1s fs-4"  >Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="email" class="form-label  fw-bold h1s fs-4" >Seu email</label>
+                                <input type="email" id="email" class="form-control"required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="telefone" class="form-label  fw-bold h1s fs-4">Seu telefone</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-2">
+                                <label for="mensagem" class="form-label  fw-bold h1s fs-4">Sua mensagem</label>
+                                <textarea  id="mansagem"  class="form-control"></textarea>
+                                <button type="submit" class="btn" id="botao">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="h1s fs-4">Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <span class="bi bi-facebook h1s"></span>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <span class="bi bi-instagram h1s"></span>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <span class="bi bi-whatsapp h1s"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <footer>
+        <h3>Todos os diretos reservados</h3>
+    </footer>
+    
+
 
     <script src="lib/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>

@@ -69,6 +69,8 @@ color: #eb5c25;
 
 .card {
     border-radius: 10%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4);
 }
 
 .card img {
@@ -76,4 +78,38 @@ color: #eb5c25;
     border-top-right-radius: 10%;
 }
 
+.social-links li {
+    list-style: none;
+    display: inline;
 
+}
+
+.social-links a {
+    text-decoration: none;
+    margin-right: 9px;
+}
+
+#botao {
+    background-color: #eb5c25;
+    color: #fbd6c5;
+    font-weight: bold;
+    transition: linear;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+    margin-top: 10PX;
+}
+
+#botao:hover {
+    resize: both ;
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #eb5c25;
+    height: 100px;
+    color: #fbd6c5;
+    display: flex;
+}
+
+footer h3 {
+    margin: auto auto;
+}
